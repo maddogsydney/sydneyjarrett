@@ -5,65 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>bio</title>
   <link rel="icon" href="assets/lightning.png" type="image/png">
-
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       font-size: 14px;
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
       padding: 2cm;
       min-height: 100vh;
       box-sizing: border-box;
-      gap: 2cm;
+      flex-wrap: wrap;
     }
 
-    .left-column, .right-info {
-      max-width: 45%;
+    .left-column {
+      max-width: 30%;
+      flex: 1;
+      min-width: 280px;
     }
 
     .artists {
-      margin-bottom: 2cm;
+      margin-bottom: 4cm;
     }
 
     .bio-image {
       display: block;
-      max-width: 100%;
+      max-width: 300px;
+      width: 100%;
       height: auto;
-      position: relative;
-      left: 3cm;
-      margin-bottom: 3cm;
+      margin: 0 auto 3cm auto;
+      position: static;
     }
 
     .right-info {
+      max-width: 30%;
+      flex: 1;
+      min-width: 280px;
       display: flex;
       flex-direction: column;
-      gap: 2cm;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: underline;
+      gap: 5cm;
     }
 
     @media screen and (max-width: 768px) {
       body {
         flex-direction: column;
         padding: 2rem;
-        gap: 3rem;
       }
 
-      .left-column, .right-info {
+      .left-column,
+      .right-info {
         max-width: 100%;
+      }
+
+      .artists {
+        margin-bottom: 2rem;
       }
 
       .bio-image {
-        position: static;
-        left: 0;
-        margin: 2rem auto;
         max-width: 100%;
+        margin: 2rem auto 3rem auto;
+      }
+
+      .right-info {
+        gap: 2rem;
       }
     }
   </style>
@@ -73,27 +77,32 @@
   <div class="left-column">
     <div class="artists">
       <p>
-        Sydney Jarrett is an artist working on Gadigal land. His multi‑disciplinary practice explores re‑compositions of materialities of the state. They are engaged in practices of loitering and gestures of refusal.<br><br>
-        They are currently completing their Honours in Fine Arts at UNSW Art & Design.
+        Sydney Jarrett is an artist working on Gadigal land. His multi-disciplinary practice explores re-compositions of materialities of the state. He is engaged in practices of loitering and gestures of refusal.<br><br>
+        He is currently completing his Honours in Fine Arts at UNSW Art and Design.
       </p>
     </div>
+
     <img class="bio-image" src="assets/ap.jpeg" alt="Picture of Sydney">
   </div>
 
   <div class="right-info">
     <p>
-      2025 – <a href="https://schmickcontemporary.com/an-order-into-another" target="_blank" rel="noopener noreferrer">An order into another</a>, Schmick Contemporary<br>
-      2024 – <a href="https://kudosarc.com/myth-and-signification-1" target="_blank" rel="noopener noreferrer">Myth and Signification</a>, Kudos<br>
-      2024 – Connection is Unstable, Rofe Street Gallery
+      <br>
+      2025 – '<a href="https://schmickcontemporary.com/an-order-into-another" target="_blank" rel="noopener noreferrer">An order into another</a>' Schmick Contemporary<br>
+      2024 – '<a href="https://kudosarc.com/myth-and-signification-1" target="_blank" rel="noopener noreferrer">Myth and Signification</a>' Kudos<br>
+      2024 – 'Connection is Unstable' Rofe Street Gallery
     </p>
 
     <p>
-      2024 – <a href="https://frameworkarc.com" target="_blank" rel="noopener noreferrer">Framework Co‑ordinator</a>, UNSW Art & Design<br>
-      2023 – Performing Arts Forum Residency, St Erme, France<br>
-      2022 – Kudos Committee, UNSW Art & Design<br>
-      2020–2022 – Post Poems Collective, Co‑ordinator
+      <br>
+      2024 – <a href="https://frameworkarc.com" target="_blank" rel="noopener noreferrer">Framework Co-ordinator</a>, UNSW Art and Design<br>
+      2023 – Performing Arts Forum Residency, St Erme, France<br>
+      2022 – Kudos Committee, UNSW Art and Design<br>
+      2020–2022 – Post Poems Collective, Co-ordinator<br>
     </p>
   </div>
 
 </body>
 </html>
+
+
