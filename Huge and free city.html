@@ -4,76 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Huge and free city</title>
-    <link rel="icon" href="assets/lightning.png" type="image/png">
-  
- body {
-  margin: 0;
-  padding: 2cm;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  display: flex;
-  justify-content: space-between;
-  min-height: 100vh;
-  box-sizing: border-box;
-  flex-wrap: nowrap;
-}
+  <link rel="icon" href="assets/lightning.png" type="image/png">
 
-.left-images {
-  display: flex;
-  flex-direction: column;
-  gap: 2cm;
-  max-width: 50%;
-}
+  <style>
+    body {
+      margin: 0;
+      padding: 2cm;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
 
-.left-images img {
-  width: 100%;
-  height: auto;
-  border: 1px solid #ccc;
-}
+    .left-images {
+      display: flex;
+      flex-direction: column;
+      gap: 2cm; /* space between images */
+      max-width: 50%;
+    }
 
-.right-text {
-  max-width: 70%;
-  align-self: flex-start;
-}
+    .left-images img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  body {
-    flex-direction: column;
-    padding: 1.5rem;
-  }
-  
-  .left-images,
-  .right-text {
-    max-width: 100%;
-    margin-bottom: 2rem;
-  }
-  
-  .right-text {
-    align-self: center;
-  }
-}
+    .right-text {
+      max-width: 70%;
+      align-self: flex-start;
+    }
+
+    /* MOBILE FIX: stack columns to avoid overlap */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        padding: 1rem 2cm;
+      }
+      
+      .left-images,
+      .right-text {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <div class="left-images">
     <img src="assets/huge1.jpeg" alt="Image 1">
-
     <br>
-
     <img src="assets/huge2.jpeg" alt="Image 2">
     <br>
-
     <img src="assets/huge3.jpeg" alt="Image 3">
- 
   </div>
 
-  <div class="right-text">
-    <p>
-  Huge and free city, 2024, astroturf, concrete, paint. <br><br>
-  Exhibited as part of <a href="https://kudosarc.com/myth-and-signification-1">Myth and Signification.</a>. <br><br>
-</p>
-  </div>
-
-</body>
-</html>
+  <div class="right-text"
