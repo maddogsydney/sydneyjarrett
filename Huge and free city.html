@@ -6,36 +6,53 @@
   <title>Huge and free city</title>
     <link rel="icon" href="assets/lightning.png" type="image/png">
   
-  <style>
-    body {
-      margin: 0;
-      padding: 2cm;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      display: flex;
-      justify-content: space-between;
-      min-height: 100vh;
-      box-sizing: border-box;
-    }
+ body {
+  margin: 0;
+  padding: 2cm;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
 
-    .left-images {
-      display: flex;
-      flex-direction: column;
-      gap: 2cm; /* space between images */
-      max-width: 50%;
-    }
+.left-images {
+  display: flex;
+  flex-direction: column;
+  gap: 2cm;
+  max-width: 50%;
+}
 
-    .left-images img {
-      width: 100%;
-      height: auto;
-      border: 1px solid #ccc;
-    }
+.left-images img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
 
-    .right-text {
-      max-width: 70%;
-      align-self: flex-start;
-    }
-  </style>
+.right-text {
+  max-width: 70%;
+  align-self: flex-start;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  
+  .left-images,
+  .right-text {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .right-text {
+    align-self: center;
+  }
+}
 </head>
 <body>
 
