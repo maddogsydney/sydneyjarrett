@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>bio</title>
   <link rel="icon" href="assets/lightning.png" type="image/png">
+
   <style>
     a {
       color: blue;
@@ -16,17 +17,19 @@
       margin: 0;
       font-family: Arial, sans-serif;
       font-size: 14px;
-      display: flex;
-      justify-content: space-between;
-      padding: 0;
       min-height: 100vh;
       box-sizing: border-box;
-      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 8vw;
+      padding: 5vh 5vw 3rem;
     }
 
-    .left-column {
-      max-width: 30%;
-      flex: 1;
+    .left-column,
+    .right-info {
+      width: 30%;
+      max-width: 380px;
       min-width: 280px;
     }
 
@@ -39,28 +42,37 @@
       max-width: 300px;
       width: 100%;
       height: auto;
-      margin: 0 auto 1cm auto;
-      position: static;
+      margin: 0 auto 1cm;
     }
 
     .right-info {
-      max-width: 30%;
-      flex: 1;
-      min-width: 280px;
       display: flex;
       flex-direction: column;
-      gap: 3cm;
+      gap: 2rem;
+    }
+
+    .right-info p {
+      margin: 0;
+      line-height: normal;
+    }
+
+    .right-info .entries {
+      line-height: 1.5;
     }
 
     @media screen and (max-width: 768px) {
       body {
         flex-direction: column;
-        padding: 2rem;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
       }
 
       .left-column,
       .right-info {
-        max-width: 100%;
+        width: 100%;
+        max-width: 500px;
+        min-width: 0;
       }
 
       .artists {
@@ -69,7 +81,7 @@
 
       .bio-image {
         max-width: 100%;
-        margin: 2rem auto 3rem auto;
+        margin: 2rem auto;
       }
 
       .right-info {
@@ -78,6 +90,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="left-column">
@@ -95,8 +108,7 @@
 
   <div class="right-info">
     <p>
-      <br>
-      2026 - 'Hatched: National Graduate Show' Perth Institute of Contemporary Art <br>
+      2026 - 'Hatched: National Graduate Show' Perth Institute of Contemporary Art<br>
       2026 - '<a href="https://pariari.org/domain-exhibition" target="_blank" rel="noopener noreferrer">Domain</a>' Pari<br>
       2025 - '<a href="https://firstdraft.org.au/program/2025/10/17/fugitives" target="_blank" rel="noopener noreferrer">Fugitives</a>' Firstdraft<br>
       2025 – '<a href="https://schmickcontemporary.com/an-order-into-another" target="_blank" rel="noopener noreferrer">An order into another</a>' Schmick Contemporary<br>
@@ -106,14 +118,16 @@
 
     <a href="https://www.theguardian.com/pica-hatched-2026/2026/jun/01/hatched-at-pica-launching-australias-next-generation-of-artists" target="_blank" rel="noopener noreferrer">The Guardian: Hatched at PICA: Launching Australia's next generation of artists</a>
 
-  <div>
-  <div>2026 - <a href="Hatched artist in residence 2026.html">Hatched Artist in Residence, Perth Institute of Contemporary Art, 2026, WA.</a></div>
-  <div>2025 - Bachelor of Fine Arts with Honours, UNSW Art & Design</div>
-  <div>2024 – <a href="https://frameworkarc.com" target="_blank" rel="noopener noreferrer">Framework Co-ordinator</a>, UNSW Art and Design</div>
-  <div>2023 – Performing Arts Forum Residency, St Erme, France</div>
-  <div>2022 – Kudos Committee, UNSW Art and Design</div>
-  <div>2020–2022 – Post Poems Collective, Co-ordinator</div>
-</div>
+    <div class="entries">
+      2026 - <a href="Hatched artist in residence 2026.html">Hatched Artist in Residence, Perth Institute of Contemporary Art, 2026, WA.</a><br>
+      2025 - Bachelor of Fine Arts with Honours, UNSW Art & Design<br>
+      2024 – <a href="https://frameworkarc.com" target="_blank" rel="noopener noreferrer">Framework Co-ordinator</a>, UNSW Art and Design<br>
+      2023 – Performing Arts Forum Residency, St Erme, France<br>
+      2022 – Kudos Committee, UNSW Art and Design<br>
+      2020–2022 – Post Poems Collective, Co-ordinator
+    </div>
+  </div>
+
 </body>
 </html>
 
