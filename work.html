@@ -17,8 +17,11 @@
     .work-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 4rem 2rem;
+      grid-template-rows: repeat(4, 1fr);
+      gap: 0 2rem;
       padding: 8vh 5vw;
+      min-height: 84vh;
+      box-sizing: border-box;
       align-items: center;
       justify-items: center;
       text-align: center;
@@ -32,8 +35,10 @@
     @media screen and (max-width: 768px) {
       .work-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem 1rem;
-        padding: 5rem 1rem;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 0 1rem;
+        padding: 3rem 1rem;
+        min-height: 100vh;
         font-size: 0.95em;
       }
 
@@ -64,6 +69,3 @@
 </body>
 </html>
 ```
-
-
-
