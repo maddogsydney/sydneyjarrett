@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,42 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>work</title>
   <link rel="icon" href="assets/lightning.png" type="image/png" />
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      min-height: 100vh;
     }
 
-    .untitled-column {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      flex-direction: column;
-      gap: 1cm;
-      font-size: 1em;
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem 2rem;
+      padding: 8vh 5vw;
+      align-items: center;
+      justify-items: center;
       text-align: center;
+      font-size: 1em;
+    }
+
+    .work-grid a {
       white-space: nowrap;
     }
 
     @media screen and (max-width: 768px) {
-      .untitled-column {
-        gap: 2rem;
+      .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 1rem;
+        padding: 5rem 1rem;
         font-size: 0.95em;
-        padding: 0 1rem;
+      }
+
+      .work-grid a {
         white-space: normal;
       }
     }
   </style>
 </head>
+
 <body>
 
-  <div class="untitled-column">
+  <div class="work-grid">
     <a href="Unlikely heroes (1&2).html">Unlikely heroes (1&2)</a>
     <a href="Hustlers.html">Hustlers</a>
-  <a href="Pointing the finger & High beams.html">Pointing the finger/High beams</a>
-    <a href="What shall I render.html"> What shall I render</a>
+    <a href="Pointing the finger & High beams.html">Pointing the finger/High beams</a>
+    <a href="What shall I render.html">What shall I render</a>
     <a href="Gate-crash.html">Gate-crash</a>
     <a href="An order into another.html">An order into another</a>
     <a href="Scammers never die.html">Scammers never die</a>
@@ -49,12 +59,11 @@
     <a href="Signs.html">Signs</a>
     <a href="Low body.html">Low body</a>
     <a href="In defence of the girl.html">In defence of the girl</a>
-      
-    </body></a>
   </div>
 
 </body>
 </html>
+```
 
 
 
